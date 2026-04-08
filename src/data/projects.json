@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "title": "厦门山海健康步道·春季徒步攻略",
+    "description": "一张图看明白，最全踏春路线推荐",
+    "cover": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "tags": [
+      "厦门",
+      "徒步",
+      "春季",
+      "小众"
+    ],
+    "date": "2026-04-07",
+    "status": "火热报名中",
+    "guideId": "xiamen-hiking"
+  },
+  {
+    "id": 2,
+    "title": "鼓浪屿深度一日游",
+    "description": "避开人流，发现不一样的鼓浪屿",
+    "cover": "https://images.unsplash.com/photo-1548689816-c399f954f3d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "tags": [
+      "厦门",
+      "文化",
+      "慢生活"
+    ],
+    "date": "2026-04-10",
+    "status": "即将开始",
+    "guideId": "gulangyu"
+  },
+  {
+    "id": 3,
+    "title": "环岛路骑行指南",
+    "description": "最美海岸线，吹着海风看日落",
+    "cover": "https://images.unsplash.com/photo-1517022812141-23620dba5c23?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "tags": [
+      "骑行",
+      "海边",
+      "休闲"
+    ],
+    "date": "2026-04-12",
+    "status": "已成团",
+    "guideId": "huandao-road"
+  },
+  {
+    "title": "杭州西湖·断桥残雪",
+    "description": "欲把西湖比西子，淡妆浓抹总相宜。春日西湖，柳浪闻莺。",
+    "cover": "https://images.unsplash.com/photo-1599639668324-42795c029230?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "tags": [
+      "杭州",
+      "古风",
+      "浪漫"
+    ],
+    "status": "正在直播",
+    "guideId": "hangzhou-xihu",
+    "id": 1775580434085,
+    "date": "2026-04-07"
+  },
+  {
+    "title": "张家界·天门山索道",
+    "description": "穿行云雾，如入仙境。玻璃栈道挑战胆量。",
+    "cover": "https://images.unsplash.com/photo-1541848756149-e3843fcbbde0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "tags": [
+      "湖南",
+      "奇观",
+      "冒险"
+    ],
+    "status": "热门推荐",
+    "guideId": "zhangjiajie",
+    "id": 1775581717789,
+    "date": "2026-04-07"
+  },
+  {
+    "title": "桂林·漓江竹筏",
+    "description": "桂林山水甲天下，漓江倒影美如画。",
+    "cover": "https://images.unsplash.com/photo-1517022812141-23620dba5c23?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "tags": [
+      "广西",
+      "山水",
+      "休闲"
+    ],
+    "status": "火热报名",
+    "guideId": "guilin",
+    "id": 1775584390478,
+    "date": "2026-04-07"
+  }
+]

@@ -18,13 +18,29 @@ npm run dev
 ## 🛠️ 技术栈
 - **核心框架**: Vue 3 (主架构) + React (部分动态组件)
 - **构建工具**: Vite
+- **内容管理**: Markdown (gray-matter + markdown-it)
 - **样式方案**: Tailwind CSS v4 + PostCSS
-- **图标/图片**: Unsplash 高清图源
+- **图片/数据**: Unsplash 高清图源 + 本地 JSON/MD 驱动
+
+## 🌟 核心功能
+1. **数据驱动**: 主页列表由 [projects.json](src/data/projects.json) 驱动，详情页文案与结构化数据由 [guides/](src/data/guides/) 目录下的 Markdown 文件驱动。
+2. **景点发现系统**: 主页右上角内置搜索框，支持从“模拟网络数据库”发现热门景点。
+3. **一键同步本地**: 发现新景点后，点击“一键添加”即可通过自定义 Vite 插件将数据实时写入本地磁盘，自动生成卡片与攻略模版。
+4. **Markdown 渲染**: 详情页支持 Frontmatter 解析（读取路线方案）和 Markdown 正文渲染（展示景点介绍）。
 
 ## 📂 项目结构
+- `src/config/ai.config.js`: AI 生成功能配置文件。
+- `src/data/projects.json`: 存储项目列表元数据。
+- `src/data/guides/`: 存储每个景点的 Markdown 攻略文件（包含 YAML 路线数据）。
 - `src/views/`: 包含大主页 (Home.vue) 和 详情页 (RouteDetail.vue)。
-- `src/components/`: 包含 Vue 组件及 [ReactWrapper.vue](src/components/ReactWrapper.vue)（用于加载 React 组件）。
-- `src/components/TravelStatus.jsx`: 使用 React 编写的动态状态组件。
+- `src/components/`: 包含 Vue 组件及 [ReactWrapper.vue](src/components/ReactWrapper.vue)。
+- `vite.config.js`: 包含了自定义的本地文件读写 API 逻辑及 AI 预留接口。
+
+## 🤖 AI 功能配置 (实验室)
+项目已预留 AI 自动生成攻略的接口，支持在线模型（如 OpenAI）和本地模型（如 Ollama）。
+- **配置路径**: [src/config/ai.config.js](src/config/ai.config.js)
+- **启用方法**: 将 `enabled` 字段设为 `true`。
+- **工作原理**: 启用后，系统在添加景点时会优先尝试调用 AI 生成定制化文案，若调用失败或未启用，则自动回退到内置的专业攻略模版。
 
 ## 📝 路线方案
 详情页提供了三种精心设计的路线：
