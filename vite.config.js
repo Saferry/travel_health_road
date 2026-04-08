@@ -167,6 +167,7 @@ ${spot.description}
 }
 
 export default defineConfig({
+  base: '/travel_health_road/',
   plugins: [
     vue(),
     react(),
